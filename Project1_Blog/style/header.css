@@ -1,0 +1,17 @@
+#blogTitle{
+    flex-grow: 1;
+}
+
+#menuButton{
+    display: none;
+    background: url(/images/menu.svg) center center no-repeat;
+    border: none;
+    width: 44px;
+    height: 44px;
+}
+
+@media (max-width: 768px){
+    #menuButton{
+        display: block;
+    }
+}
