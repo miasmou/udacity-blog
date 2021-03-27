@@ -1,0 +1,88 @@
+#blogCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(360px, auto);
+    max-width: 1000px;
+    grid-gap: 24px;
+    padding: 24px;
+    margin: auto;
+}
+
+.blogCard{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.cardThumbnail{
+    background-image: url(../images/ocean.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.cardDescription{
+    padding: 16px 16px 0 16px;
+    flex-grow: 1;
+}
+
+.cardDescription a{
+    font-family: serif;
+    font-size: 1.6em;
+    line-height: 130%;
+    text-decoration: none;
+    color: black;
+}
+
+.cardDescription a:hover{
+    color: rgb(5, 44, 116);
+}
+
+.cardFooter{
+    display: flex;
+    align-items: bottom;
+    padding: 16px 16px;
+}
+
+.cardDate{
+    flex-grow: 1;
+    color: rgb(90, 90, 90);
+}
+
+.cardButtons{
+    display: flex;
+}
+
+.cardButtons button{
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    border: none;
+}
+
+.cardButton:hover{
+    opacity: 0.6;
+}
+
+.bookmarkButton{
+    background: url(../images/bookmark.svg) no-repeat;
+}
+
+.likeButton{
+    background: url(../images/heart.svg) no-repeat;
+}
+
+@media (max-width: 768px){
+    #blogCards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(400px, auto);
+        grid-gap: 24px;
+        padding: 24px;
+        margin: auto;
+    }
+}
