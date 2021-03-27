@@ -41,7 +41,7 @@
 
 #authorTitle, #authorCompany{
     font-size: 16px;
-    color:rgb(124, 124, 124);
+    color:rgb(61, 61, 61);
 }
 
 #authorBio{
@@ -73,7 +73,7 @@
 
 .imageCaption{
     font-size: 14px;
-    color: rgb(124, 124, 124);
+    color: rgb(61, 61, 61);
 }
 
 #socialLinks{
